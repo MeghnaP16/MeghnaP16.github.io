@@ -69,11 +69,11 @@
   ]
 }
 </script>
- <style>
-  /* Flawless Circle Profile Picture Layout */
+<style>
+  /* 1. Perfect Circle Profile Image Setup */
   .profile-pic {
-    width: 240px;            
-    height: 240px;           
+    width: 200px;            /* Slightly adjusted for an elegant mobile ratio */
+    height: 200px;           
     max-width: 100%;         
     border-radius: 50%;      
     display: block;          
@@ -81,9 +81,29 @@
     object-fit: cover;       
     object-position: center top; 
     border: 3px solid #eee;  
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Adds a subtle professional shadow */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+
+  /* 2. Global Mobile Width Layout Override */
+  @media screen and (max-width: 768px) {
+    /* Targets the body element wrapper containers to strip out rigid layouts */
+    body, html, main, .container, #wrapper, .wrapper, section {
+      width: 100% !important;
+      max-width: 100% !important;
+      padding-left: 16px !important;  /* Elegant padding so text doesn't hit edge */
+      padding-right: 16px !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      box-sizing: border-box !important;
+    }
+    
+    /* Centers headers and layout text cleanly under the circular photo */
+    header, .profile-header, h1, h2 {
+      text-align: center !important;
+    }
   }
 </style>
+
 </head>
 <body>
 
