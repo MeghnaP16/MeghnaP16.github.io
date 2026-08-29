@@ -69,19 +69,21 @@
   ]
 }
 </script>
-  <style>
+ <style>
+  /* Flawless Circle Profile Picture Layout */
   .profile-pic {
-    width: 100%;             /* Let the picture scale down on small screens */
-    max-width: 280px;        /* Prevents the image from getting too massive on desktop */
-    height: auto;            /* Keeps the original aspect ratio so you don't look stretched */
-    border-radius: 50%;      /* Makes the image a perfect professional circle */
-    display: block;          /* Allows centering rules to apply */
-    margin: 20px auto;       /* Centers the image horizontally with some breathing room */
-    object-fit: cover;       /* Ensures the face centers perfectly if cropped */
-    border: 3px solid #eee;  /* Adds a subtle elegant border around the profile */
+    width: 240px;            
+    height: 240px;           
+    max-width: 100%;         
+    border-radius: 50%;      
+    display: block;          
+    margin: 24px auto;       
+    object-fit: cover;       
+    object-position: center top; 
+    border: 3px solid #eee;  
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Adds a subtle professional shadow */
   }
 </style>
-
 </head>
 <body>
 
